@@ -1,0 +1,20 @@
+div{    
+    height: 300px;
+    width: 300px;
+    margin: 15px;
+    border: 2px solid black;
+    border-radius: 15px;
+    float: left;
+    overflow: scroll;
+    outline-style: solid;
+    outline-color: blueviolet;
+    outline-width: 15px;
+    padding: 20px;
+   
+}
+#div2{
+   /* display: none;  */
+   visibility: hidden;
+
+
+}

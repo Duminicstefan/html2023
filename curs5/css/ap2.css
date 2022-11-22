@@ -1,0 +1,37 @@
+div{
+    width: 100%;
+    max-width: 600px;
+    height: 600px;
+}
+div img{
+    width: 100%;
+    max-width: 600px;
+    max-height: 600px;
+}
+@media (max-width: 576px){ 
+    .tableta, .laptop
+    {display: none;}
+    /*mobil*/
+.telefon{
+    background-image: url("../images/telefon.jpeg");
+    background-size: cover;
+}
+}
+@media (min-width: 577px) and (max-width: 768px)
+{
+    .laptop, .telefon{
+        display: none;}
+        .tableta{background-image: url("../images/telefon.jpeg");
+            background-size: cover;
+    /*tableta*/
+}
+
+@media (min-width:769px) {
+    .telefon, .tableta{
+        display: none;}
+    /*laptop*/}
+    .laptop{
+        background-image: url("../images/laptop.jpeg");
+        background-size: cover;
+    }
+    }
