@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>select</title>
+</head>
+
+<body>
+    <h1>Formilar cu select</h1>
+    <form action="">
+        <label for="oras">Selecteaza orasul de resedinta</label>
+        <select name="oras" id="oras" required>
+            <option value="">selecteaza</option>
+            <option value="bucuresti">bucuresti</option>
+            <option value="cluj">cluj</option>
+            <option value="iasi">iasi</option>
+            <option value="arad" selected>arad</option>
+            <option value="brasov">brasov</option>
+
+        </select>
+        <label for="eveniment">Selecteaza orasul de eveniment</label>
+        <select name="eveniment[]" id="eveniment" required multiple>
+            <option value="">selecteaza</option>
+            <option value="bucuresti">bucuresti</option>
+            <option value="cluj">cluj</option>
+            <option value="iasi">iasi</option>
+            <option value="arad" selected>arad</option>
+            <option value="brasov">brasov</option>
+            
+        </select>
+        <label for="mesaj">mesaj</label>
+        <textarea name="mesaj" id="mesaj" cols="30" rows="10" >
+            afafvsdv demo
+        </textarea>
+        <input type="submit" value="trimite datele">
+    
+    </form>
+
+</body>
+
+</html>
