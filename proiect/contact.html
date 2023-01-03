@@ -1,19 +1,25 @@
+<!DOCTYPE html>
 <html lang="ro">
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title> Portofoliu HTML CSS Proiect 2022 - 2023</title>
+    <title>HTML CSS Proiect 2022 - 2023</title>
     <meta name="description" content="Proiect demo de la cursul de HTML CSS " />
     <meta name="keywords" content="website, site, CSS, HTML, proeict" />
-    <meta name="author" content="Stefan">
+    <meta name="author" content="LinkAcademy">
     <!-- Favicon-->
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon-16x16.png">
     <link rel='icon' type='image/x-icon' href='./assets/images/favicon.ico' />
     <!-- CSS  -->
-    <link rel="stylesheet" type="text/css" href="./assets/css/style2.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/contact.css">
+    <link rel="stylesheet" type="text/css" href="../proiect/assets/css/style.css" />
 </head>
 
 <body>
@@ -25,74 +31,94 @@
             </div>
         </div>
         <nav id="menubar">
+            <!-- Hamburger icon -->
+            <a href="#" class="logo">CS</a>
+            <input class="side-menu" type="checkbox" id="side-menu" />
+            <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+
             <ul id="menu">
-                <li><a href="acasa2.html">Acasa</a></li>
-                <li><a href="Despre noi.html">Despre noi</a></li>
+                <li><a href="acasa.html">Acasa</a></li>
+                <li><a href="despre.html">Despre noi</a></li>
                 <li><a href="portofoliu.html">Portofoliu</a></li>
-                <li><a href="Blog.html">Blog</a></li>
+                <li><a href="blog.html">Blog</a></li>
                 <li class="selected"><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </div>
-</body>
-<div id="main"> aici va fi atasat portofoliul
-    <h1>Formular de contact</h1>
-    <form action="" method="post">
-        <fieldset>
-            <legend>card</legend>
-            <label for="card">Numar Card</label>
-            <input type="number" name="card" id="card" maxlength="16" required> <br>
-            <label for="data">data expirare</label>
-            <input type="date" name="data" id="data" required>
-        </fieldset>
-        <fieldset>
-            <legend>Livrare</legend>
-            <label for="nume">nume</label>
-            <input type="text" name="nume" id="nume" placeholder="Introduceti Numele"> <br>
-            <label for="prenume">prenume</label>
-            <input type="text" name="prenume" id="prenume" placeholder="introduceti Prenumele"> <br>
-            <label for="comapanie">Companie</label>
-            <input type="text" name="comapnie" id="companie" placeholder="Introduceti numele comapniei"> <br>
-            <label for="adresa">adresa</label>
-            <input type="text" name="adresa" id="adresa" placeholder="Introduceti adreasa"> <br>
-            <label for="oras">oras</label>
-            <input type="text" name="oras" id="oras" placeholder="Introduceti Orasul"> <br>
-            <label for="email">email</label>
-            <input type="email" name="email" id="email" placeholder="Introduceti Email-ul"> <br>
-            <label for="telefon">telefon</label>
-            <input type="tel" name="telefon" id="telefon" placeholder="introduceti numarul de telefon"> <br>
+    <div id="main">
+        <h1>Formular de contact</h1>
+        <form class="form-register" action="" method="post">
+            <fieldset>
+                <legend>Card</legend>
+                <div class="form-row">
+                    <label for="card">Numar Card:</label>
+                    <input type="number" name="card" id="card" maxlength="16" required> <br>
 
-        </fieldset>
-        <br>
-        <fieldset>
-            <legend>Adauga produsele</legend>
-            <label for="masina">masina</label>
-            <select name="masini" id="masini">
-                <option value="volvo">volvo</option>
-                <option value="opel">opel</option>
-                <option value="dacia">dacia</option>
-            </select> <br>
-            <label for="mesaj">Mesaj</label>
-            <textarea name="mesaj" id="mesaj" cols="30" rows="10"></textarea> <br>
-            <label for="optionale">optionale</label> <br>
-            <input type="checkbox" name="senzori" id=""> Senzorii
-            <input type="checkbox" name="camera" id=""> camera
-            <br>
-            <label for="culoare">culoare</label> <br>
-            <input type="radio" name="culoare" id="nm">Negru metalizat <br>
-            <input type="radio" name="culoare" id="r">Rosie <br>
-            <input type="radio" name="culoare" id="a">Alba <br>
-            <input type="radio" name="culoare" id="v">Verde <br>
-        </fieldset> <br>
-        <input type="submit">
- </form>
-    <h1>adresa noastra</h1>
-    <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22788.75579458593!2d26.093163399999998!3d44.44148005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1ff375e0c8dc5%3A0x8779c51910f76e35!2sArmenian%20Church%2C%20Bucharest!5e0!3m2!1sen!2sro!4v1669739439732!5m2!1sen!2sro"
-        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"></iframe>
-</div>
-<div id="footer">
-    <p><a href="acasa.html">Home</a> | <a href="contact.html">Contact</a></p>
-    <p>Copyright &copy; Nume Prenume | <a href="">HTML5</a> | <a href="">CSS</a> </p>
-</div>
+                </div>
+                <div class="form-row">
+                    <label for="data">Data expirare</label>
+                    <input type="date" name="data" id="data" required>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Livrare</legend>
+                <div class="form-row">
+                    <label for="prenume"> Preume</label>
+                    <input type="text" name="prenume" id="prenume" placeholder="Introduceti Prenume"> <br>
+                </div>
+                <div class="form-row">
+                    <label for="nume"> Nume</label>
+                    <input type="text" name="nume" id="nume" placeholder="Introduceti Numele">
+                </div>
+
+            </fieldset>
+            <fieldset>
+                <legend>Adauga produsele</legend>
+                <div class="form-row">
+                    <label for="masini">Masina: </label>
+
+                    <select name="masini" id="masini">
+                        <option value="volvo">Volvo</option>
+                        <option value="opel">Opel</option>
+                        <option value="dacia">Dacia</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <label for="mesaj"> Mesaj</label>
+                    <textarea name="mesaj" id="mesaj" cols="30" rows="10"></textarea> <br>
+                </div>
+                <div class="form-row">
+                    <label for="optionale"> Optionale</label> <br>
+                    <input class="check" type="checkbox" name="senzori" id=""> Senzori
+                    <input class="check" type="checkbox" name="camera" id=""> Camera
+                </div>
+                <div class="form-row">
+                    <label for="culoare"> Culoare</label> <br>
+                    <input class="radio" type="radio" name="culoare" id="nm"> Negru metalizat <br>
+                    <input class="radio" type="radio" name="culoare" id="r"> Rosie <br>
+                    <input class="radio" type="radio" name="culoare" id="a"> Alba <br>
+                    <input class="radio" type="radio" name="culoare" id="v"> Verde
+                </div>
+            </fieldset>
+
+            <input class="btn" type="submit" value=" Trimite datele">
+
+        </form>
+
+        <h1> Adresa noastra este:</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis reprehenderit earum corrupti recusandae
+            magni dolorum fugit obcaecati asperiores,
+            minus reiciendis placeat tempora perferendis, a quaerat non nisi modi necessitatibus eius!</p>
+
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2848.837970092496!2d26.0993881!3d44.4364858!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1ff46e86936c1%3A0xa5ca8365e0ce3627!2sStrada%20Academiei%2C%20Bucure%C8%99ti!5e0!3m2!1sro!2sro!4v1669739312083!5m2!1sro!2sro"
+            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <footer id="footer">
+        <p><a href="acasa.html">Home</a> | <a href="contact.html">Contact</a></p>
+        <p>Copyright &copy; Nume Prenume | <a href="">HTML5</a> | <a href="">CSS</a> </p>
+    </footer>
+</body>
+
+</html>
